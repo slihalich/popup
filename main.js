@@ -5,11 +5,13 @@ open = d.getElementById('open'),
 popup = d.getElementById('popup');
 
 close.addEventListener('click', function() {
-  popup.classList.add('fade');
+  popup.classList.add('popupfade');
+  overlay.classList.add('overlayfade');
   setTimeout(function() {
     overlay.classList.add('none');
-    popup.classList.remove('fade');
-  }, 150);
+    popup.classList.remove('popupfade');
+    overlay.classList.remove('overlayfade');
+  }, 160);
 });
 
 open.addEventListener('click', function() {
