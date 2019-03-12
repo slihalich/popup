@@ -5,7 +5,6 @@ open = d.getElementById('open'),
 popup = d.getElementById('popup');
 
 overlay.addEventListener('click', function(e) {
-  console.log(e);
   if (e.target === close || e.target === overlay) {
     popup.classList.add('popupfade');
     overlay.classList.add('overlayfade');
