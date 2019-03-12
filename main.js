@@ -9,7 +9,7 @@ close.addEventListener('click', function() {
   setTimeout(function() {
     overlay.classList.add('none');
     popup.classList.remove('fade');
-  }, 100);
+  }, 150);
 });
 
 open.addEventListener('click', function() {
